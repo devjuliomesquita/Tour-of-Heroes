@@ -1,9 +1,16 @@
 <mat-toolbar color="primary">
   <span> {{title}} </span>
+  <span fxFlex></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Lista de Heroes" matTooltip="Herois" routerLink="/heroes">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" matTooltip="Info about the action">
+   <mat-icon>share</mat-icon>
+ </button>
 </mat-toolbar>
 
 <div class="content">
-  <app-heroes></app-heroes>
+  <router-outlet></router-outlet>
   <app-messages></app-messages>
 </div>
 
